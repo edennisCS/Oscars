@@ -1,0 +1,73 @@
+<!doctype html>
+<!-- I confirm that this coursework submission is entirely my own work, 
+except where explicitly stated otherwise.
+-->
+<!--- Emily Dennis IT MSc 21/04/19 -->
+<head>
+  <meta charset="utf-8">
+  
+ <!--title and header defined --> 
+<title>Nominations for the academy awards</title> 
+
+  <h1>Nominations for the academy awards</h1>
+
+
+</head>
+
+<body>
+
+ <!--form defined -->  
+ <div class="form">
+ <!-- form linked to php-->
+<form action="transform.php" method="get">
+
+ <!--selections are made for won or lost or all -->  
+<label for="Select"> Won or lost?</label><br>
+ <select name="selections" id="selections">
+	<option value="win">win</option>
+	<option value="lose">lose</option>
+	<option value="all">all</option>
+  </select><br><br>
+<!--select by year with input and dropdown-->
+  <label for="Year"> Year:</label><br>
+  <input type="number" name="yearInput" id="yearInput" min="1960" max="2010"><br>
+  <select name="queryYear" id="queryYear">
+	<option value="contains">contains</option>
+	<option value="none">no restriction</option>
+  </select><br><br>
+ <!--select by category with input and dropdown--> 
+   <label for="Category"> Category:</label><br>
+   <input type="text" name="categoryInput" id="categoryInput"><br>
+   <select name="queryCategory" id="queryCategory">
+	<option value="contains">contains</option>
+	<option value="none">no restriction</option>
+   </select><br><br>
+ <!--select by Nominee with input and dropdown-->  
+  <label for="Nominee"> Nominee: </label><br>
+  <input type="text" name="nomineeInput" id="nomineeInput"><br>
+   <select name="queryNominee" id="queryNominee">
+	<option value="contains">contains</option>
+	<option value="none">no restriction</option>
+  </select><br><br>
+  
+<!--select by Info with input and dropdown-->  
+  <label for="Info"> Info:</label><br>
+  <input type="text" name="infoInput" id="infoInput"><br> 
+  <select name="queryInfo" id="queryInfo">
+	<option value="contains">contains</option>
+	<option value="none">no restriction</option>
+  </select><br><br>
+  
+<!--submit the form-->
+<input type="submit">
+</form>
+ </div> 
+  
+  <br>
+
+
+</body>
+
+</html>
+
+
